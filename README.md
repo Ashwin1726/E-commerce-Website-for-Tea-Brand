@@ -193,14 +193,18 @@ Production deployment & testing
 
 AI/ML Engineer · Full-Stack Developer
 
-<p>
+<a href="YOUR_PORTFOLIO_URL">
+  <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" />
+</a>
 <a href="https://www.linkedin.com/in/ashwin2617">
-<img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
-<a href="mailto:ashwinkumaras59@gmail.com">
-<img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+<a href="https://www.instagram.com/im_ashwinn_" target="_blank">
+  <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
 </a>
-</p>
+<a href="mailto:ashwinkumar59@gmail.com">
+  <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
 
 
 <br/>
