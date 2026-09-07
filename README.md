@@ -1,648 +1,203 @@
 <div align="center">
 
-🦋 Flowey
+🦋 FLOWEY
 
 Premium Blue Tea E-Commerce Platform
 
-A modern full-stack storefront combining elegant e-commerce UX, Firebase-powered user workflows, loyalty gamification, and AI-assisted product intelligence.
+A modern full-stack storefront with AI-powered recommendations, loyalty rewards & a premium shopping experience.
 
 <br/>
 
+<img src="client/src/assets/generated_images/blue_tea_lifestyle_scene.png" width="780" alt="Flowey Blue Tea"/>
+
+<br/><br/>
 
 
 
 
 
 
-
-
-<br/>
-
-Built with React + TypeScript + Express + Firebase + OpenAI
 
 </div>
 
-✨ Overview
+✨ What is Flowey?
 
-Flowey is a premium blue-tea e-commerce application designed around a polished luxury storefront experience.
+Flowey is a premium blue-tea e-commerce platform built to make online shopping more personal, intelligent and rewarding.
 
-The project goes beyond a basic product catalog by combining:
+It combines a polished storefront with AI recommendations, authentication, cart & wishlist, order tracking, loyalty tiers, Spin & Win, and an admin dashboard.
 
-🛍️ Product discovery and detailed product pages
+🚀 Highlights
 
-🛒 Persistent cart and wishlist workflows
+<table>
+<tr>
+<td width="50%">
 
-🔐 Email/password and Google authentication
+🛍️ Shopping
 
-📦 Order placement and order-status tracking
+Product discovery
 
-🎁 Loyalty points, tiers, rewards, and a daily Spin & Win experience
+Product details & variants
 
-🤖 AI-powered product recommendations
+Cart & wishlist
 
-✍️ AI-assisted product description generation
+Checkout
 
-📊 Admin-side order, inventory, and revenue visibility
+Order tracking
 
-📱 Responsive UI built for modern web experiences
+</td>
+<td width="50%">
 
-The application follows a reference-based luxury e-commerce design direction, using generous whitespace, serif-led product typography, soft blue accents, and focused visual hierarchy.
+🤖 AI
 
-🎯 Product Vision
+Personalized recommendations
 
-Make premium tea shopping feel personal, intelligent, and rewarding.
+AI product descriptions
 
-Flowey is designed around three experiences:
+OpenAI integration
 
-Experience
+Intelligent product discovery
 
-Goal
+</td>
+</tr>
+<tr>
+<td>
 
-🛍️ Customer Storefront
-
-Discover, compare, wishlist, and purchase products
-
-🤖 AI Layer
-
-Personalize product discovery and assist product content creation
-
-📊 Admin Workspace
-
-Manage products, orders, stock, and business visibility
-
-🚀 Core Features
-
-🛍️ Customer Experience
-
-Responsive premium storefront
-
-Featured product discovery
-
-Product categories and product detail pages
-
-Multiple pack-size variations
-
-Product pricing and stock visibility
-
-Wishlist management
-
-Persistent shopping cart
-
-Cart quantity controls
-
-Free-shipping threshold messaging
-
-Checkout flow
-
-UPI and Cash on Delivery payment-method selection
-
-Order history
-
-Order status progression
-
-Tracking ID display
-
-Responsive mobile navigation
-
-🔐 Authentication & User Data
-
-Firebase Authentication
-
-Google sign-in
-
-Email/password sign-in
-
-User profile documents
-
-Persistent cart data
-
-Persistent wishlist data
-
-Saved shipping addresses
-
-Customer/admin roles
-
-🎁 Loyalty & Gamification
-
-Flowey includes a loyalty system designed to increase customer engagement.
-
-Loyalty tiers:
+🎁 Loyalty
 
 Bronze → Silver → Gold → Royal
 
-Features include:
+Loyalty points
 
-Loyalty point balance
-
-Tier progression
-
-Reward redemption
-
-Active reward management
+Rewards & discounts
 
 Daily Spin & Win
 
-Discount rewards
+</td>
+<td>
 
-Point rewards
+🔐 Platform
 
-Free-shipping rewards
+Firebase Authentication
 
-Reward expiration tracking
+Google Sign-in
 
-🤖 AI Features
+Firestore
 
-Flowey integrates OpenAI-powered functionality through backend API endpoints.
+Admin dashboard
 
-AI Product Recommendations
+Inventory & revenue insights
 
-The recommendation endpoint considers:
+</td>
+</tr>
+</table>
 
-Customer preferences
+🧠 How It Works
 
-Optional purchase history
+             FLOWEY
+                │
+     ┌──────────┴──────────┐
+     ▼                     ▼
+ CUSTOMER                ADMIN
+     │                     │
+Products → Cart        Products
+     │                     │
+Wishlist → Checkout    Orders
+     │                     │
+Orders → Rewards       Analytics
+     │                     │
+     └──────────┬──────────┘
+                ▼
+        Express REST API
+          │           │
+          ▼           ▼
+      Firebase      OpenAI
+      Auth/DB       AI Layer
 
-Available product catalog
-
-It returns ranked recommendations with:
-
-Product ID
-
-Relevance score
-
-Recommendation reasoning
-
-The system also includes a fallback recommendation flow when OpenAI is not configured or an AI request fails.
-
-AI Product Description Generation
-
-Admin/product workflows can generate:
-
-Detailed product descriptions
-
-Short product taglines
-
-The generated content is structured as JSON and uses product name, category, and optional ingredients.
-
-🧑‍💼 Admin Capabilities
-
-The project includes dedicated admin routes for:
-
-📊 Dashboard overview
-
-💰 Revenue visibility
-
-📦 Order management
-
-🛍️ Product management
-
-⚠️ Low-stock alerts
-
-📈 Recent order visibility
-
-👥 Customer/order data workflows
-
-🔧 Inventory-oriented management
-
-The dashboard derives business metrics such as:
-
-Total revenue
-
-Total orders
-
-Pending orders
-
-Inventory alerts
-
-Recent orders
-
-🧱 Tech Stack
+🛠️ Tech Stack
 
 Frontend
-
-React 18
-
-TypeScript
-
-Vite
-
-Wouter
-
-TanStack React Query
-
-Tailwind CSS
-
-Radix UI
-
-Lucide React
-
-Framer Motion
-
-Recharts
+React TypeScript Vite Tailwind CSS Wouter React Query Zustand Framer Motion
 
 Backend
+Node.js Express REST APIs Zod
 
-Node.js
+Database & Auth
+Firebase Authentication Firestore PostgreSQL Drizzle ORM
 
-Express.js
+AI & Visualization
+OpenAI API Recharts
 
-TypeScript
-
-Zod
-
-OpenAI API
-
-REST API endpoints
-
-Data & Authentication
-
-Firebase Authentication
-
-Firebase Firestore
-
-Drizzle ORM
-
-PostgreSQL support
-
-Development & Tooling
-
-Git
-
-GitHub
-
-VS Code
-
-Docker
-
-Google Colab
-
-GitHub Actions / CI/CD configuration
-
-🏗️ Architecture
-
-┌────────────────────────────────────────────────────────────┐
-│                      FLOWEY PLATFORM                        │
-├────────────────────────────────────────────────────────────┤
-│                                                            │
-│  React + TypeScript + Tailwind CSS                         │
-│              │                                             │
-│              ├──────────────► Customer UI                  │
-│              │                  ├─ Home                    │
-│              │                  ├─ Products                │
-│              │                  ├─ Cart / Wishlist         │
-│              │                  ├─ Checkout                │
-│              │                  ├─ Orders                  │
-│              │                  └─ Rewards                 │
-│              │                                             │
-│              └──────────────► Admin UI                     │
-│                                 ├─ Dashboard               │
-│                                 ├─ Products                │
-│                                 └─ Orders                  │
-│                                                            │
-│                         REST API                            │
-│                            │                               │
-│              ┌─────────────┴─────────────┐                 │
-│              ▼                           ▼                 │
-│       Express / Node.js             OpenAI API             │
-│              │                           │                 │
-│              ▼                           ▼                 │
-│        Product / Order              AI Recommendations     │
-│        API operations               AI Descriptions        │
-│                                                            │
-│                         Firebase                           │
-│                  ├─ Authentication                         │
-│                  └─ Firestore                              │
-│                                                            │
-└────────────────────────────────────────────────────────────┘
-
-📁 Project Structure
-
-flowey/
-│
-├── client/
-│   ├── public/
-│   └── src/
-│       ├── assets/
-│       ├── components/
-│       │   ├── ui/
-│       │   ├── header.tsx
-│       │   ├── footer.tsx
-│       │   ├── hero-section.tsx
-│       │   ├── product-card.tsx
-│       │   ├── cart-drawer.tsx
-│       │   ├── featured-products.tsx
-│       │   └── spin-wheel.tsx
-│       │
-│       ├── hooks/
-│       ├── lib/
-│       │   ├── firebase.ts
-│       │   ├── queryClient.ts
-│       │   └── store.ts
-│       │
-│       ├── pages/
-│       │   ├── admin/
-│       │   ├── home.tsx
-│       │   ├── products.tsx
-│       │   ├── product-detail.tsx
-│       │   ├── checkout.tsx
-│       │   ├── orders.tsx
-│       │   ├── wishlist.tsx
-│       │   ├── rewards.tsx
-│       │   ├── login.tsx
-│       │   └── about.tsx
-│       │
-│       └── App.tsx
-│
-├── server/
-│   ├── env.ts
-│   ├── index.ts
-│   ├── routes.ts
-│   ├── storage.ts
-│   ├── static.ts
-│   └── vite.ts
-│
-├── shared/
-│   └── schema.ts
-│
-├── script/
-│   └── build.ts
-│
-├── design_guidelines.md
-├── package.json
-├── tsconfig.json
-└── vite.config.ts
-
-🔌 API Highlights
-
-Products
-
-GET /api/products
-GET /api/products/:id
-POST /api/products/seed
-
-AI Recommendations
-
-POST /api/ai/recommendations
-
-Example request:
-
-{
-  "preferences": "Refreshing citrus and caffeine-free tea",
-  "purchaseHistory": ["Flowey Classic Blue"]
-}
-
-AI Product Description
-
-POST /api/ai/description
-
-Example request:
-
-{
-  "name": "Flowey Citrus Burst",
-  "category": "Refreshing Collection",
-  "ingredients": "Butterfly Pea Flowers, Lemon, Orange Peel"
-}
-
-⚙️ Getting Started
-
-1. Clone the repository
-
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-cd YOUR_REPOSITORY
-
-2. Install dependencies
-
-npm install
-
-3. Configure environment variables
-
-Create a .env file in the project root:
-
-OPENAI_API_KEY=your_openai_api_key
-DATABASE_URL=your_database_url
-
-Configure your Firebase project separately with the required Authentication and Firestore settings.
-
-4. Start the application
-
-For the server:
-
-npm run dev
-
-For the client:
-
-npm run dev --prefix client
-
-Or run both development processes together:
-
-npm run dev:all
-
-5. Build for production
-
-npm run build
-
-6. Type-check the project
-
-npm run check
-
-🔐 Environment & Security
-
-Never commit secrets to GitHub.
-
-Before pushing this project, make sure .env is ignored:
-
-.env
-.env.*
-!.env.example
-
-Create an example configuration instead:
-
-OPENAI_API_KEY=
-DATABASE_URL=
-
-⚠️ The supplied project archive contains a .env file. Do not upload that file to a public repository. If it has ever contained real credentials, rotate/revoke those credentials before publishing the repository.
-
-Also review Firebase Firestore Security Rules and ensure admin/customer access is properly restricted.
-
-🎨 Design System
-
-Flowey follows a premium luxury e-commerce visual direction.
-
-Typography
-
-Playfair Display — luxury headings and product presentation
-
-Inter — functional UI and body content
-
-Cormorant Garamond — accent messaging and special callouts
-
-Visual Language
-
-Soft light-blue palette
-
-Clean white surfaces
-
-Spacious layouts
-
-Rounded modern components
-
-Subtle shadows
-
-Product-focused imagery
-
-Responsive grids
-
-Minimal visual clutter
-
-🧪 Project Highlights
-
-Area
-
-Implementation
-
-UI
-
-Responsive React components
-
-State
-
-Zustand store
-
-Data fetching
-
-TanStack React Query
-
-Routing
-
-Wouter
-
-Auth
-
-Firebase Authentication
-
-Database
-
-Firebase Firestore
-
-AI
-
-OpenAI API
-
-Validation
-
-Zod
-
-Styling
-
-Tailwind CSS
-
-UI primitives
-
-Radix UI
-
-Charts
-
-Recharts
-
-Icons
-
-Lucide React
-
-Build
-
-Vite + TypeScript
-
-📌 What Makes This Project Stand Out
-
-01 — Commerce + AI
-
-Instead of treating AI as a separate demo, Flowey integrates AI directly into product discovery and catalog management.
-
-02 — Complete Customer Journey
-
-The application covers the journey from:
-
-Discover
-   ↓
-Product Details
-   ↓
-Wishlist / Cart
-   ↓
-Checkout
-   ↓
-Order Tracking
-   ↓
-Rewards
-   ↓
-Repeat Engagement
-
-03 — Gamified Retention
-
-The loyalty system and Spin & Win experience create an additional engagement layer beyond traditional e-commerce.
-
-04 — Admin Visibility
-
-The admin workspace provides operational visibility into revenue, orders, and inventory conditions.
-
-🖼️ Project Preview
-
-Homepage
-
-<img src="client/src/assets/generated_images/blue_tea_lifestyle_scene.png" alt="Flowey tea lifestyle preview" width="850"/>
-
-Premium Product Experience
-
-<img src="client/src/assets/generated_images/flowey_premium_tea_box.png" alt="Flowey premium tea product" width="700"/>
-
-Gift Collection
-
-<img src="client/src/assets/generated_images/tea_gift_collection_display.png" alt="Flowey gift collection" width="850"/>
-
-🔮 Future Improvements
-
-Potential next-stage improvements for the platform:
-
-Production payment gateway integration
-
-Advanced recommendation analytics
-
-Customer behavior analytics
-
-Automated email/order notifications
-
-Product review and rating system
-
-Advanced search and filtering
-
-Subscription management
-
-Improved AI business insights
-
-Automated deployment pipeline
-
-Expanded automated testing
-
-👨‍💻 Developer
-
-Ashwin Kumar
-
-AI/ML Engineer | Full-Stack Developer
-
-I build intelligent applications that combine AI/ML, modern web development, and practical product engineering.
-
-<p>
-<a href="https://www.linkedin.com/in/ashwin1726">
-<img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a>
-<a href="mailto:ashwinkumaras59@gmail.com">
-<img src="https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
-</a>
-</p>
+📸 Preview
 
 <div align="center">
 
-⭐ If you found this project interesting, consider starring the repository.
+<img src="client/src/assets/generated_images/flowey_premium_tea_box.png" width="42%" alt="Premium Tea Product"/>
+&nbsp;&nbsp;
+<img src="client/src/assets/generated_images/tea_gift_collection_display.png" width="42%" alt="Tea Gift Collection"/>
 
-Built with curiosity, code, and a passion for intelligent products.
+</div>
+
+⚡ Quick Start
+
+# Clone
+git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+
+# Install
+npm install
+
+# Configure environment
+# Create .env and add your required API/database credentials
+
+# Run
+npm run dev:all
+
+Environment
+
+OPENAI_API_KEY=your_key
+DATABASE_URL=your_database_url
+
+🔒 Never commit .env or real API keys to GitHub.
+
+📌 Project Structure
+
+client/        → React frontend
+server/        → Express backend & APIs
+shared/        → Shared schemas
+script/        → Build configuration
+
+💡 Why Flowey?
+
+E-commerce + AI + Gamification — in one experience.
+
+Flowey demonstrates how modern web technologies can be combined with AI to create a product that is not only functional, but also engaging, scalable and visually polished.
+
+🔮 Roadmap
+
+Payment gateway integration
+
+Product reviews & ratings
+
+Advanced search & filters
+
+Customer analytics
+
+Automated notifications
+
+Subscription plans
+
+Production deployment & testing
+
+<div align="center">
+
+👨‍💻 Built by Ashwin Kumar
+
+AI/ML Engineer · Full-Stack Developer
+
+
+
+
+<br/>
+
+⭐ If you like the project, consider starring the repository.
 
 </div>
