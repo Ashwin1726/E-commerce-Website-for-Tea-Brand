@@ -543,84 +543,7 @@ The project includes a dedicated administration experience for managing the stor
 </tbody>
 </table>
 
-<div align="center">
 
-📁 PROJECT STRUCTURE
-
-</div>
-
-e commerce/
-│
-├── client/
-│   ├── public/
-│   │   ├── favicon.png
-│   │   └── manifest.json
-│   │
-│   └── src/
-│       ├── assets/
-│       │   └── generated_images/
-│       │       ├── blue_tea_lifestyle_scene.png
-│       │       ├── flowey_premium_tea_box.png
-│       │       └── tea_gift_collection_display.png
-│       │
-│       ├── components/
-│       │   ├── cart-drawer.tsx
-│       │   ├── featured-products.tsx
-│       │   ├── footer.tsx
-│       │   ├── header.tsx
-│       │   ├── hero-section.tsx
-│       │   ├── product-card.tsx
-│       │   ├── spin-wheel.tsx
-│       │   ├── theme-provider.tsx
-│       │   └── ui/
-│       │
-│       ├── hooks/
-│       ├── lib/
-│       │   ├── firebase.ts
-│       │   ├── queryClient.ts
-│       │   ├── store.ts
-│       │   └── utils.ts
-│       │
-│       ├── pages/
-│       │   ├── home.tsx
-│       │   ├── products.tsx
-│       │   ├── product-detail.tsx
-│       │   ├── checkout.tsx
-│       │   ├── login.tsx
-│       │   ├── orders.tsx
-│       │   ├── wishlist.tsx
-│       │   ├── rewards.tsx
-│       │   ├── about.tsx
-│       │   └── admin/
-│       │       ├── index.tsx
-│       │       ├── orders.tsx
-│       │       └── products.tsx
-│       │
-│       ├── App.tsx
-│       ├── index.css
-│       └── main.tsx
-│
-├── server/
-│   ├── env.ts
-│   ├── index.ts
-│   ├── routes.ts
-│   ├── static.ts
-│   ├── storage.ts
-│   └── vite.ts
-│
-├── shared/
-│   └── schema.ts
-│
-├── script/
-│   └── build.ts
-│
-├── components.json
-├── drizzle.config.ts
-├── package.json
-├── tailwind.config.ts
-├── tsconfig.json
-├── vite.config.ts
-└── design_guidelines.md
 
 <div align="center">
 
@@ -838,14 +761,17 @@ Building modern applications that combine
 
 <br/>
 
-<a href="https://www.linkedin.com/in/ashwin1726/">
-<img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
+<a href="YOUR_PORTFOLIO_URL">
+  <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" />
 </a>
-
-<br/><br/>
-
-<a href="https://github.com/YOUR_USERNAME">
-<img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white"/>
+<a href="https://www.linkedin.com/in/ashwin2617">
+  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+<a href="https://www.instagram.com/im_ashwinn_" target="_blank">
+  <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+</a>
+<a href="mailto:ashwinkumaras59@gmail.com">
+  <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
 </a>
 
 <br/><br/>
